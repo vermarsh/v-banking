@@ -1,0 +1,345 @@
+<app-header></app-header>
+<div class="wrap">
+    <div class="conta_iner">
+        <div class="dasboard">
+            <div class="title">
+                <h2>Loans</h2>
+                <button (click)="openDialog()">Apply Loan</button>
+            </div>
+            <div class="dMain">
+                <div class="dLeft">
+                    <div class="status" style="justify-content: start;">
+                        <div class="sBox" routerLink="/dashboard/transaction">
+                            <div class="sLeft">
+                                <i class="fa fa-usd" aria-hidden="true"></i>
+                            </div>
+                            <div class="sRight">
+                                <h4>Transactions</h4>
+                                <!-- <h6>189</h6> -->
+                            </div>
+                        </div>
+                        <div class="sBox" routerLink="/dashboard/investment">
+                            <div class="sLeft">
+                                <i class="fa fa-usd" aria-hidden="true"></i>
+                            </div>
+                            <div class="sRight">
+                                <h4>Investments</h4>
+                                <!-- <h6>189</h6> -->
+                            </div>
+                        </div>
+                        <div class="sBox">
+                            <div class="sLeft">
+                                <i class="fa fa-usd" aria-hidden="true"></i>
+                            </div>
+                            <div class="sRight">
+                                <h4>Offers</h4>
+                                <!-- <h6>189</h6> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <mat-tab-group>
+                <mat-tab label="In Process (10)"> 
+                    <div class="transaction">
+                        <div class="searchBar">
+                            <div class="fomControl"> <label>Search</label><input type="text" placeholder=""></div>
+                            <div class="fomControl"> <label>To</label><input type="date"></div>
+                            <div class="fomControl"><label>From</label> <input type="date"></div>
+                            <button>search</button>
+                           </div>
+                       
+                        <table>
+                            <tr>
+                                <th>#</th>
+                                <th>Loan No.</th>
+                                <th>Loan Name</th>
+                                <th>Type</th>
+                                <th>Aount</th>
+                                <th>Due Date</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Car Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="green">Completed</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Home Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="green">Completed</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="green">Completed</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </mat-tab>
+                <mat-tab label="OnGoing (7)"> 
+                    <div class="transaction">
+                        <div class="searchBar">
+                            <div class="fomControl"> <label>Search</label><input type="text" placeholder=""></div>
+                            <div class="fomControl"> <label>To</label><input type="date"></div>
+                            <div class="fomControl"><label>From</label> <input type="date"></div>
+                            <button>search</button>
+                           </div>
+                       
+                        <table>
+                            <tr>
+                                <th>#</th>
+                                <th>Loan No.</th>
+                                <th>Loan Name</th>
+                                <th>Type</th>
+                                <th>Aount</th>
+                                <th>Due Date</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Car Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="green">Completed</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Home Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="green">Completed</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="green">Completed</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Completed (7)">
+                    <div class="transaction">
+                        <div class="searchBar">
+                            <div class="fomControl"> <label>Search</label><input type="text" placeholder=""></div>
+                            <div class="fomControl"> <label>To</label><input type="date"></div>
+                            <div class="fomControl"><label>From</label> <input type="date"></div>
+                            <button>search</button>
+                           </div>
+                       
+                        <table>
+                            <tr>
+                                <th>#</th>
+                                <th>Loan No.</th>
+                                <th>Loan Name</th>
+                                <th>Type</th>
+                                <th>Aount</th>
+                                <th>Due Date</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Car Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="green">Completed</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Home Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="green">Completed</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="green">Completed</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>124</td>
+                                <td>Purchase</td>
+                                <td>Personal Loan</td>
+                                <td style="color: #ff844b;font-weight: bold;">$40,000</td>
+                                <td>00-00-0000</td>
+                                <td>
+                                    <button class="red">Unpaid</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                 </mat-tab>
+              </mat-tab-group>
+           
+        </div>
+    </div>
+</div>

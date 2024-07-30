@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="wrap">
+    <div class="login pExtra">
+        <div class="conta_iner">
+            <div class="loginMain">
+                <div class="loginLeft">
+                    <h1><span>Welcome back!</span>We deliver all kind of banking solutions.
+                    </h1>
+                    <p>Please sign in to continue.
+                    </p>
+                </div>
+                <div class="loginRight">
+                    <div class="formControl">
+                        <label>Email</label>
+                        <input placeholder="" value="" [(ngModel)]="email">
+                    </div>
+                    <div class="formControl">
+                        <label>Password</label>
+                        <input placeholder="" value="" type="password" [(ngModel)]="password">
+                    </div>
+                    <div class="formControl">
+                        <p routerLink="/forgot">Forgot Password?</p>
+                    </div>
+                    <button (click)="login()">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-question></app-question>
+<app-footer></app-footer>

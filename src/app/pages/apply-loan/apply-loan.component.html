@@ -1,0 +1,111 @@
+<!-- <button mat-button (click)="onNoClick()">No Thanks</button> -->
+<mat-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Basic information</ng-template>
+            <div class="fgroup">
+                <div class="formControl">
+                    <label>Type of Loan</label>
+                    <select>
+                        <option>Car</option>
+                        <option>Home</option>
+                    </select>
+                </div>
+                <div class="formControl">
+                    <label>Appicant Name</label>
+                    <input type="text">
+                </div>
+                <div class="formControl">
+                    <label>Do You Wish To Add Co-Applicants While Applying For This Loan?</label>
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="1">Yes</mat-radio-button>
+                        <mat-radio-button value="2">No</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div class="formControl">
+                    <label>Have You Short Listed The Property? </label>
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="1">Yes</mat-radio-button>
+                        <mat-radio-button value="2">No</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+            </div>
+            <div>
+                <button mat-button matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Fill out your address">
+        <form [formGroup]="secondFormGroup">
+            <div class="fgroup">
+                <div class="formControl">
+                    <label>Residence Status </label>
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="1">Yes</mat-radio-button>
+                        <mat-radio-button value="2">No</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div class="formControl">
+                    <label>Currently Residing State</label>
+                    <select>
+                        <option>Haryana</option>
+                        <option>Punjab</option>
+                    </select>
+                </div>
+                <div class="formControl">
+                    <label>Currently Residing City </label>
+                    <input type="text">
+                </div>
+                <div class="formControl">
+                    <label>Gender </label>
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="1">Yes</mat-radio-button>
+                        <mat-radio-button value="2">No</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div class="formControl">
+                    <label>Age</label>
+                    <select>
+                        <option>20</option>
+                        <option>30</option>
+                    </select>
+                </div>
+                <div class="formControl">
+                    <label>Occupation </label>
+                    <select>
+                        <option>House Wife</option>
+                        <option>Student</option>
+                    </select>
+                </div>
+                <div class="formControl">
+                    <label>Email ID </label>
+                    <input type="text">
+                </div>
+                <div class="formControl">
+                    <label>Phone Number </label>
+                    <input type="text">
+                </div>
+                <div class="formControl">
+                    <mat-checkbox class="example-margin">I declare that the information I have provided is accurate and
+                        complete to the best of my knowledge. I hereby authorize HDFC Ltd. and its affiliates to call,
+                        email, send a text through the Short messaging Service (SMS) and/or Whatsapp me in relation to
+                        any
+                        of their products. The consent herein shall override any registration for DNC/NDNC.
+                    </mat-checkbox>
+                </div>
+            </div>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        <p style="padding-bottom: 20px;"> You application for loan is submitted successfully.</p>
+        <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+        </div>
+    </mat-step>
+</mat-stepper>

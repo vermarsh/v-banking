@@ -1,0 +1,135 @@
+<app-header></app-header>
+<div class="wrap">
+    <div class="conta_iner">
+        <div class="dasboard">
+            <div class="title">
+                <h2>Profile</h2>
+            </div>
+            <div class="pMain">
+                <div class="pLeft">
+                    <div class="userImg">
+                        <figure>
+                            <img
+                                src="assets/images/male.png">
+                        </figure>
+                    </div>
+                    <ul>
+                        <li [class]="active===0?'active':''" (click)="profile();active=0">Profile</li>
+                        <li [class]="active===1?'active':''" (click)="change();active=1">Change Password</li>
+                        <li (click)="logout()">Logout</li>
+                    </ul>
+                </div>
+                <div class="pRight">
+                    <div class="profile" *ngIf="profileTab">
+                        <!-- <div class="avatar">
+                            <figure>
+                                <img
+                                    src="assets/images/male.png">
+                            </figure>
+                        </div> -->
+                        <div class="detail">
+                            <ul>
+                                <li>
+                                    <div class="dleft">
+                                        <i class="fa fa-university" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="dRight">
+                                        <h4>Account Number</h4>
+                                        <p>00000000000</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dleft">
+                                        <i class="fa fa-university" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="dRight">
+                                        <h4>Bank Name</h4>
+                                        <p>00000000000</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dleft">
+                                        <i class="fa fa-file" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="dRight">
+                                        <h4>Account Type</h4>
+                                        <p>Current</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dleft">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="dRight">
+                                        <h4>Account Holder Name</h4>
+                                        <p>Ashish Verma</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dleft">
+                                        <i class="fa fa-university" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="dRight">
+                                        <h4>Address</h4>
+                                        <p>Mohali, India</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dleft">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="dRight">
+                                        <h4>Mobile Number</h4>
+                                        <p>00000000000</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dleft">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="dRight">
+                                        <h4>Email Address</h4>
+                                        <p>00000000000</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dleft">
+                                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="dRight">
+                                        <h4>Pan Number</h4>
+                                        <p>00000000000</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="left"> <button>Edit Profile</button></div>
+                        </div>
+
+                    </div>
+                    <div class="profile" *ngIf="changeTab">
+                        <div class="changePassword">
+                            <h2>Change Password</h2>
+                            <div class="fcForm">
+                                <div class="formControl">
+                                    <label>Old Password</label>
+                                    <input type="password">
+                                </div>
+                                <div class="formControl">
+                                    <label>New Password</label>
+                                    <input type="password">
+                                </div>
+                                <div class="formControl">
+                                    <label>Confirm Password</label>
+                                    <input type="password">
+                                </div>
+                            </div>
+                            <button>Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- <app-footer></app-footer> -->

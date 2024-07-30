@@ -1,0 +1,45 @@
+<header>
+    <div class="conta_iner">
+        <div class="hMain">
+            <div class="hleft">
+                <div class="logo">
+                    <figure routerLink="/home">
+                        <img src="assets/images/logo.png">
+                    </figure>
+                </div>
+                <div class="navBar">
+                    <ul>
+                        <li *ngIf="isLoggedIn" routerLink="/dashboard" routerLinkActive="active">Dashboard</li>
+                        <li routerLink="/about" routerLinkActive="active">About Us</li>
+                        <li routerLink="/contact" routerLinkActive="active">Contact Us</li>
+                        <li routerLink="/faq" routerLinkActive="active">FAQs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hRight" *ngIf="!isLoggedIn">
+                <div class="loginOption">
+                    <h4 routerLink="/login">Login</h4>
+                </div>
+                <div class="openAccount">
+                    <button routerLink="/signup">Create an Account</button>
+                </div>
+            </div>
+            <div class="hRight ctgspl" *ngIf="isLoggedIn" (click)="showMore=!showMore">
+                <div [class]="showMore?'nbrds openAccount':'openAccount'">
+                    <span>Ashish Verma</span> <mat-icon>account_circle</mat-icon>
+                </div>
+                <div [class]="showMore?'ovfr':'dsp-none'">
+                    <div [ngClass]="'cntil'" routerLink="/profile/details">
+                        <span>Profile</span>
+                    </div>
+                    <div [ngClass]="'cntil'" routerLink="/profile/change-password">
+                        <span>Change Password</span>
+                    </div>
+                    <div [ngClass]="'cntil'" (click)="logout()">
+                        <span>Logout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

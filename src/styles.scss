@@ -1,0 +1,98 @@
+@import'assets/css/variable.scss';
+body { margin: 0;  font-family: "Source Sans Pro", sans-serif;background: #f1f6fa;overflow-x: hidden;}
+figure{
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: $lBlack;
+    border-radius: 50px;
+  }
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+ul{
+    padding-left: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+.conta_iner {
+    width: 90%;
+    margin: auto;
+}
+button, a{
+    cursor: pointer;
+}
+.wrap {
+    padding-top: 110px;
+}
+p {
+    margin: 0;
+}
+button{
+    background: $theme-clr;
+    color: #fff;
+    border: 1px solid $theme-clr;
+    padding: 15px 30px;
+    border-radius: 100px;
+    font-size: 17px;
+    min-width: 200px;
+    &:hover{
+        background: transparent;
+        color: $theme-clr;
+    }
+}
+section{
+    padding: 50px 0;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    h2{
+        font-size: 30px;
+    }
+}
+.center{
+    text-align: center !important;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #ff844b;
+}
+
+.mat-horizontal-stepper-header-container {
+    background: #dddddd70;
+    border-radius: 8px;
+}
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit{
+    background-color: $theme-clr;
+}
+.mat-stepper-horizontal-line{
+    opacity: 0;
+}
+.mat-step-header.cdk-keyboard-focused, .mat-step-header.cdk-program-focused, .mat-step-header:hover:not([aria-disabled]), .mat-step-header:hover[aria-disabled=false]{
+    background: none;
+}
+.mat-horizontal-content-container {
+    padding: 0;
+    margin-top: 30px;
+}
+.mat-radio-button {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+    background-color: $theme-clr;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+    border-color:$theme-clr
+}

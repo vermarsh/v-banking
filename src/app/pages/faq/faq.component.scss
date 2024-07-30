@@ -1,0 +1,12 @@
+@import'../about/about.component.scss';
+.mat-accordion .mat-expansion-panel:last-of-type {
+    margin-bottom: 15px !important;
+}
+.mat-expansion-panel-header:not([aria-disabled=true]) {
+    padding: 7px 15px !important;
+}
+// .fqsas {
+//     width: 50%;
+// }
+// .cnt-gs {
+// }

@@ -1,0 +1,127 @@
+@import'../../../assets/css/variable.scss';
+header {
+    background: #fff;
+    padding: 14px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 15%);
+    .hMain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .hleft {
+            display: flex;
+            align-items: center;
+            .logo{
+                figure{
+                    width: 70px;
+                }
+            }
+            .navBar{
+                ul{
+                    display: flex;
+                    li {
+                        color: $lBlack;
+                        font-size: 17px;
+                        padding-left: 55px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        &:hover {
+                            color: #ff844bc4;
+                        }
+                    }
+                    .active {
+                        color: #ff854b !important;
+                    }
+                }
+            }
+        }
+        .hRight {
+            display: flex;
+            align-items: center;
+            .loginOption{
+                h4{
+                    color: $lBlack;
+                    font-size: 17px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+            .openAccount {
+                margin-left: 30px;
+                button{
+                    background: $lBlack;
+                    color: #fff;
+                    border: 1px solid $lBlack;
+                    padding: 15px 30px;
+                    border-radius: 100px;
+                    font-size: 17px;
+                    &:hover{
+                        background: transparent;
+                        color: $lBlack;
+                    }
+                }
+            }
+        }
+    }
+}
+.cntil {
+    padding: 15px;
+    font-weight: 100;
+    font-size: 15px;
+    color: #5a5858;
+    text-align: center;
+    span {
+        display: flex;
+        align-items: center;
+    }
+    &:hover {
+        background: #ff854b29;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        cursor: pointer;
+    }
+}
+.dsp-none {
+    display: none;
+}
+.ctgspl {
+    position: relative;
+    cursor: pointer;
+    .openAccount {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        width: 180px;
+        border: 1px solid #8080806b;
+        padding: 5px 15px;
+        border-radius: 8px;
+        &:hover {
+            background: #ff844be0;
+            color: #fff;
+        }
+    }
+}
+.nbrds {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    background: #ff854b;
+    color: #fff;
+    box-shadow: 0 -0.5px 4px 0 rgb(0 0 0 / 50%);
+}
+.ovfr {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+    max-height: calc(100vh - 163px);
+    overflow: auto;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    width: 210px;
+    z-index: 900;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}

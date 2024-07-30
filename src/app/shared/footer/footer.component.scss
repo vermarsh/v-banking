@@ -1,0 +1,69 @@
+@import'../../../assets/css/variable.scss';
+footer{
+    padding: 50px 0 30px;
+    background: $lBlack;
+    .fMain {
+        display: flex;
+        justify-content: space-between;
+        .fleft {
+            width: 50%;
+            .logo{
+                figure{
+                    width: 80px;
+                    background: #fff;
+                }
+                p{
+                    color: #fff;
+                    font-size: 16px;
+                    padding-top: 10px;
+                }
+            }
+        }
+        .fMid {
+            width: 30%;
+            h5{
+                color: #fff;
+                font-size: 17px;
+                margin-bottom: 20px;
+            }
+            ul{
+                li{
+                    color: #fff;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    &:hover {
+                        cursor: pointer;
+                        color: darkorange;
+                    }
+                }
+            }
+        }
+        .fRight {
+            width: 30%;
+            h5{
+                color: #fff;
+                font-size: 17px;
+                margin-bottom: 20px;
+            }
+            ul{
+                li{
+                    color: #fff;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+.ilink {
+    a {
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        &:hover {
+            cursor: pointer;
+            color: darkorange !important;
+        }
+    }
+}

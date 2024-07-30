@@ -1,0 +1,142 @@
+.profile{
+    padding: 50px;
+    background: #fff;
+    border-radius: 20px;
+    .avatar{
+        padding-bottom: 30px;
+        figure{
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            overflow: hidden;
+            img{
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .detail {
+        text-align: center;
+        h4{
+            font-size: 23px;
+        }
+        p{
+            color: #777;
+            font-size: 17px;
+        }
+       
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li{
+                display: flex;
+                align-items: center;
+                width: 48%;
+                padding-bottom: 40px;
+                .dleft {
+                    margin-right: 20px;
+                    width: 30px;
+                    i{
+                            // color: #6b8da9;
+                        font-size: 24px;
+
+                    }
+                }
+                .dRight{
+                    h4{
+                        text-align: left;
+                        font-size: 18px;
+                        color: #6b8da9;
+                    }
+                    p{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+.dasboard {
+    padding: 50px 0;
+}
+.left {
+    text-align: left;
+}
+
+.pMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .pLeft {
+        width: 28%;
+        background: #fff;
+        border-radius: 20px;
+        .userImg {
+            padding: 30px 0;
+            figure{
+                width: 120px;
+                height: 120px;
+                border-radius: 100px;
+                overflow: hidden;
+                margin: auto;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        ul{
+            li{
+                padding: 20px;
+                font-size: 20px;
+                &:hover{
+                    background: #dddddd6b;
+                    cursor: pointer;
+                }
+            }
+            .active {
+                background: #6b8da9 !important;
+                color: #fff !important;
+            }
+        }
+    }
+    .pRight {
+        width: 70%;
+    }
+}
+
+.changePassword{
+    h2{
+        font-size: 28px;
+    }
+    .fcForm {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 30px;
+        .formControl {
+            width: 49%;
+            margin-bottom: 20px;
+            label{
+                font-size: 17px;
+                width: 100%;
+                display: block;
+            }
+            input{
+                width: 100%;
+                border: 1px solid #ddd;
+                padding: 14px;
+                border-radius: 7px;
+                box-sizing: border-box;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+button{
+    margin-top: 18px;
+    min-width: auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+}

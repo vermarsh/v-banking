@@ -1,0 +1,39 @@
+@import'../dashboard/dashboard.component.scss';
+.transaction{
+    background: #fff;
+    border-radius: 10px;
+ 
+
+}
+   
+button{
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    min-width: auto;
+    
+}
+.searchBar {
+    display: flex;
+    justify-content: flex-end;
+    padding:20px;
+    .fomControl{
+        margin-right: 10px;
+        label {
+            font-size: 17px;
+            margin-bottom: 0;
+            margin-right: 8px;
+        }
+        input {
+            border: 1px solid #ddd;
+            padding: 10px;
+            min-width: 180px;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+        
+    }
+   
+
+}

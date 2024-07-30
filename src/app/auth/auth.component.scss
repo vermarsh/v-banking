@@ -1,0 +1,61 @@
+@import'../../assets/css/variable.scss';
+.login {
+    padding: 50px 150px;
+    &.pExtra{
+        padding: 100px 150px 200px;
+    }
+    .loginMain {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Source Sans Pro", sans-serif;
+        .loginLeft{
+            width: 50%;
+            h1{
+                color: $lBlack;
+                font-size: 48px;
+                padding-bottom: 10px;
+                span{
+                    color: #7ad8ff;
+                    font-size: 17px;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+            p{
+                font-size: 20px;
+                color: #777;
+            }
+        }
+        .loginRight {
+            width: 45%;
+            .formControl{
+                padding-bottom: 20px;
+                p{
+                    text-align: right;
+                    cursor: pointer;
+                }
+                label{
+                    width: 100%;
+                    display: block;
+                    font-size: 14px;
+                    color: $lBlack;
+                    padding-bottom: 6px;
+                }
+                input {
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    padding: 15px 10px;
+                    width: 100%;
+                    border-radius: 8px;
+                }
+                textarea{
+                    min-height: 100px;
+                    resize: none;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    padding: 15px 10px;
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}

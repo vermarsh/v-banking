@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="wrap">
+    <div class="conta_iner">
+        <div class="content">
+            <h2>FAQs</h2>
+            <div class="cnt-gs">
+                <div class="fqsas" *ngFor="let item of faqs">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              How to use this platform?
+                            </mat-panel-title>
+                            <mat-panel-description>
+                              Click to view the answer
+                            </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </mat-expansion-panel>
+                      </mat-accordion>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
